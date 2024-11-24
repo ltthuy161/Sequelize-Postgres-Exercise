@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: sequelize-postgres-exercise
-    env: node
-    buildCommand: npm install
-    startCommand: node index.js
-    region: oregon
-    branch: main
-    autoDeploy: true
