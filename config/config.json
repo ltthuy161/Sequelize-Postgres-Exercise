@@ -1,9 +1,9 @@
 {
   "development": {
     "username": "postgres",
-    "password": "0803",
-    "database": "sequelize-exercise",
-    "host": "127.0.0.1",
+    "password": "tHGUESebsEIcJBbWpMdayUUbVKPuoUjv",
+    "database": "railway",
+    "host": "postgres.railway.internal",
     "dialect": "postgres",
     "port": 5432
   },
