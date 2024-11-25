@@ -1,9 +1,9 @@
 {
   "development": {
     "username": "postgres",
-    "password": "tHGUESebsEIcJBbWpMdayUUbVKPuoUjv",
-    "database": "railway",
-    "host": "postgres.railway.internal",
+    "password": "0803",
+    "database": "sequelize-exercise",
+    "host": "127.0.0.1",
     "dialect": "postgres",
     "port": 5432
   },
@@ -15,7 +15,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "use_env_variable": "DATABASE_URL",
-    "dialect": "postgres"
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
   }
 }

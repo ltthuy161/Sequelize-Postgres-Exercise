@@ -1,15 +1,20 @@
 const { Sequelize } = require('sequelize');
+const dotevn = require('dotenv');
 
-const sequelize = new Sequelize(process.env.DATABASE_URL, {
-  dialect: 'postgres',
-  protocol: 'postgres',
-  logging: false, // Disable logging for production
-  dialectOptions: {
-    ssl: {
-      require: true,
-      rejectUnauthorized: false, // Adjust for certain platforms
-    },
-  },
+dotevn.config();
+
+const {
+    DB_NAME,
+    DB_USER,
+    DB_PASSWORD,
+    DB_PORT,
+    DB_URI
+} = process.env;
+
+const db = new Sequelize(DB_URI, {
+    define: {
+        timestamps: false
+    }
 });
 
-module.exports = sequelize;
+module.exports = db;
